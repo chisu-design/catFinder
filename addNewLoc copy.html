@@ -21,8 +21,7 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
-    
-      <div class="container">
+        <div class="container">
 <!-- nav bar world -->
         <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container-fluid">
@@ -47,36 +46,36 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
-
-        <!-- button -->
-        <div class = "col-xs-3">
-          <div id="addNewLocation">
-            <div class="container text-center">
-               <a href="addNewLoc.html" class="btn btn-custom" role="button">Add New Location</a>
-            </div>
-            <!-- <button type="button" class="btn btn-default btn-sm btn-block">
-              <img src="img/addNewLocation.png" alt="Add New Location Icon" height="42" width="42">
-              Add New Location
-            </button> -->
-          </div>
-        </div>
-
-        <!-- Google Map -->
-        <section class="py-1">
-          <div class="container-fluid">
-            <section id="map">
-              <iframe width="100%" height="510" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=40.7128%2C-74.0059&key=AIzaSyDJVw_wi1XXQpjDCE1eiH4B2TPRmlABodQ" allowfullscreen></iframe>
-            </section>
-          </div>
-    </section>
+<!-- form -->
+        <section id="addLocationForm">
+			<div class="add_Location_Form">
+			<!-- upload photo button -->
+				<div id="uploadPhoto">
+					<input type="file" onchange="previewFile()"><br>
+					<img src="img/addPhoto.png" height="200" alt="Upload Image">
+				</div>
+			<!-- cat info -->
+				<form id="settings-form" action="/action_page.php" method="get">					
+					Address<br>
+					<input type="text" name="address"><br><br>
+					Name(optional)<br>
+					<input type="text" name="name"><br><br>
+					Description(optional)<br>
+					<input type="text" name="description"><br><br>
+				</form>
+				
+				<input type="submit" id="post_button" name="post_button" value="submit" onclick="post();"/>
+			</div>
+		</section>
       </div>
     <div>
       <hr>
       <footer>
         <p>&copy; CatFinder 2017</p>
       </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    </div> <!-- /container -->   
+		</div>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
