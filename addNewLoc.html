@@ -23,7 +23,7 @@
     <body>
         <div class="container">
 <!-- nav bar world -->
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-custom navbar-fixed-top">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -48,33 +48,33 @@
         </nav>
 <!-- form -->
         <section id="addLocationForm">
-			<div class="add_Location_Form">
-			<!-- upload photo button -->
-				<div id="uploadPhoto">
-					<input type="file" onchange="previewFile()"><br>
-					<img src="img/addPhoto.png" height="200" alt="Upload Image">
-				</div>
-			<!-- cat info -->
-				<form id="settings-form" action="/action_page.php" method="get">					
-					Address<br>
-					<input type="text" name="address"><br><br>
-					Name(optional)<br>
-					<input type="text" name="name"><br><br>
-					Description(optional)<br>
-					<input type="text" name="description"><br><br>
-				</form>
-				
-				<input type="submit" id="post_button" name="post_button" value="submit" onclick="post();"/>
-			</div>
-		</section>
-      </div>
-    <div>
-      <hr>
-      <footer>
-        <p>&copy; CatFinder 2017</p>
-      </footer>
+    			<div class="add_Location_Form">
+    			<!-- upload photo button -->
+    				<div id="uploadPhoto">
+    					<input type="file" onchange="previewFile()"><br>
+    					<img src="img/addPhoto.png" height="200" alt="Upload Image">
+    				</div>
+    			<!-- cat info -->
+    				<form id="settings-form" action="/action_page.php" method="get">					
+    					<div id="form-line">
+                Address<br>
+    					 <input type="text" name="address"><br><br>
+              </div>
+    					<div id="form-line">
+                Name(optional)<br>
+    					 <input type="text" name="name"><br><br>
+              </div>
+    					<div id="form-line">
+                Description(optional)<br>
+    					 <input type="text" name="description"><br><br>
+              </div>
+    				</form>
+    				<footer>
+    				  <input type="submit" id="post_button" name="post_button" value="SUBMIT" onclick="post();"/>
+            </footer>
+    			</div>
+    		</section>
     </div> <!-- /container -->   
-		</div>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
