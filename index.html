@@ -68,18 +68,36 @@
               <iframe width="100%" height="550" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=40.7128%2C-74.0059&key=AIzaSyDJVw_wi1XXQpjDCE1eiH4B2TPRmlABodQ" allowfullscreen></iframe>
             </section>
           </div>
-    </section>
-      </div>
-    <div>
-      <hr>
-      <footer>
-        <p>&copy; CatFinder 2017</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        </section>
+          </div>
+        <div>
+          <hr>
+          <footer>
+            <p>&copy; CatFinder 2017</p>
+          </footer>
+        </div> <!-- /container -->        
+        <!-- Firebase -->
+
+        <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyCCvts9xarbQN5yK7DLenVrGwZuTo2sVWg",
+            authDomain: "catfinder-b90a1.firebaseapp.com",
+            databaseURL: "https://catfinder-b90a1.firebaseio.com",
+            projectId: "catfinder-b90a1",
+            storageBucket: "catfinder-b90a1.appspot.com",
+            messagingSenderId: "286010632123"
+          };
+          firebase.initializeApp(config);
+        </script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
+        
     </body>
 </html>
