@@ -3078,7 +3078,7 @@ fieldset[disabled] .btn-danger.active {
 }
 .btn-link {
   font-weight: normal;
-  color: #337ab7;
+  color: #FFFFFF;
   border-radius: 0;
 }
 .btn-link,
@@ -3098,7 +3098,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #23527c;
+  color: #FFFFFF;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3124,7 +3124,7 @@ fieldset[disabled] .btn-link:focus {
 .btn-custom:active, 
 .btn-custom.active, 
 .open .dropdown-toggle.btn-custom { 
-  color: #7297BA; 
+  color: #FFFFFF; 
   background-color: #365966; 
   border: #7297BA; 
 } 

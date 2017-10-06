@@ -28,8 +28,14 @@
  	text-align: right;
  }
 
- #addNewLocation .container a {
+ #label_button {
+ 	border: 2px solid #7297BA;
+ 	border-radius: 10px;
  	margin: 10px auto;
+ 	width: 700px;
+ }
+  #label_button a {
+ 	color:#7297BA;
  }
 
  /* add location page */
@@ -70,6 +76,27 @@
  	padding:0px;
  }
 
+/* addNewLoc */
+
+.txt{
+	color:#7297BA;
+}
+
+.uploadGrp{
+	width: 300px;
+	height:250px;
+	color:#7297BA;
+	background-color: #FFF;
+	/*background-image: url("addPhoto.png");*/
+	text-align: center;	
+	border: solid 2px #7297BA;
+	border-radius: 10px;
+	margin-top: 50px;	
+}
+
+#file{
+	opacity:0;
+}
 
 
  ==========================================================================

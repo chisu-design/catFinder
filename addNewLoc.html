@@ -21,82 +21,76 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
+    
         <div class="container">
 <!-- nav bar world -->
-        <nav class="navbar navbar-custom navbar-fixed-top">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">CatFinder</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Saved Cat Location</a></li>
-                <li><a href="#">History</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
+            <nav class="navbar navbar-custom navbar-fixed-top">
+                <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">CatFinder</a>
+                    </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Saved Cat Location</a></li>
+                    <li><a href="#">History</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
 <!-- form -->
-        <section id="addLocationForm">
-    			<div class="add_Location_Form">
-    			<!-- upload photo button -->
-    				<div id="uploadPhoto">
-    					<input type="file" onchange="previewFile()"><br>
-    					<img src="img/addPhoto.png" height="200" alt="Upload Image">
-    				</div>
-    			<!-- cat info -->
-    				<form id="settings-form" action="/action_page.php" method="get">					
-    					<div id="form-line">
-                Address<br>
-    					 <input type="text" name="address"><br><br>
-              </div>
-    					<div id="form-line">
-                Name(optional)<br>
-    					 <input type="text" name="name"><br><br>
-              </div>
-    					<div id="form-line">
-                Description(optional)<br>
-    					 <input type="text" name="description"><br><br>
-              </div>
-    				</form>
-    				<footer>
-    				  <input type="submit" id="post_button" name="post_button" value="SUBMIT" onclick="post();"/>
-            </footer>
-    			</div>
-    		</section>
-            </div> <!-- /container -->   
+            
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2 txt">
+                        <h4> Select cat pic from album</h1>
+                    </div>
+                    <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+            			<!-- upload photo button -->
+        				<label class="uploadGrp">
+                            <img src="img/addPhoto.png" width="250px">
+        					<input type="file" class="uploadGrp" onchange="previewFile()" id="file"><br>
+        					<!-- <img src="img/addPhoto.png" height="200" alt="Upload Image"> -->
+        				</label>
+                    </div>
+                </div>
+            
+
+				<footer>
+				  <button type="button" class="btn btn-custom" id="uploadBtn" onclick="uploadFile()">SUBMIT</button>
+                </footer>
+            			
     		
-            <!-- Firebase -->
-            <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
-            <script>
-              // Initialize Firebase
-              var config = {
-                apiKey: "AIzaSyCCvts9xarbQN5yK7DLenVrGwZuTo2sVWg",
-                authDomain: "catfinder-b90a1.firebaseapp.com",
-                databaseURL: "https://catfinder-b90a1.firebaseio.com",
-                projectId: "catfinder-b90a1",
-                storageBucket: "catfinder-b90a1.appspot.com",
-                messagingSenderId: "286010632123"
-              };
-              firebase.initializeApp(config);
-            </script>
+        </div> <!-- /container -->   
+    		
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyCCvts9xarbQN5yK7DLenVrGwZuTo2sVWg",
+            authDomain: "catfinder-b90a1.firebaseapp.com",
+            databaseURL: "https://catfinder-b90a1.firebaseio.com",
+            projectId: "catfinder-b90a1",
+            storageBucket: "catfinder-b90a1.appspot.com",
+            messagingSenderId: "286010632123"
+          };
+          firebase.initializeApp(config);
+        </script>
 
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-            <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
 
-            <script src="js/main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
