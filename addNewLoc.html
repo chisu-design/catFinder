@@ -19,6 +19,10 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <!-- jquery and firebase -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
     </head>
     <body>
     
@@ -54,36 +58,23 @@
                     </div>
                     <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
             			<!-- upload photo button -->
-        				<label class="uploadGrp">
+        				<label id="myForm">
                             <img src="img/addPhoto.png" width="250px">
         					<input type="file" class="uploadGrp" onchange="previewFile()" id="file"><br>
         					<!-- <img src="img/addPhoto.png" height="200" alt="Upload Image"> -->
         				</label>
+                        <input type="text" name="catName">
+                        <input type="submit" value="Submit" >
                     </div>
                 </div>
             
-
-				<footer>
-				  <button type="button" class="btn btn-custom" id="uploadBtn" onclick="uploadFile()">SUBMIT</button>
-                </footer>
+                
+				<!-- <footer> -->
+<!-- 				  <button type="button" class="btn btn-custom" id="uploadBtn" onclick="uploadFile()">SUBMIT</button>
+                </footer> -->
             			
     		
         </div> <!-- /container -->   
-    		
-        <!-- Firebase -->
-        <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
-        <script>
-          // Initialize Firebase
-          var config = {
-            apiKey: "AIzaSyCCvts9xarbQN5yK7DLenVrGwZuTo2sVWg",
-            authDomain: "catfinder-b90a1.firebaseapp.com",
-            databaseURL: "https://catfinder-b90a1.firebaseio.com",
-            projectId: "catfinder-b90a1",
-            storageBucket: "catfinder-b90a1.appspot.com",
-            messagingSenderId: "286010632123"
-          };
-          firebase.initializeApp(config);
-        </script>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
