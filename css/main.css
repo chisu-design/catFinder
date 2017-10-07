@@ -1,121 +1,118 @@
-.active{
-	float: left;
-	margin-left: 500px;
+.active {
+    float: left;
+    margin-left: 500px;
+}
+
+#imageUpload {
+	position: relative;
+}
+
+#text-overlay {
+	position: absolute;
+	top: 19px;
+	left: 178px;
+	color: white;
+	font-size: 50px;
 }
 
 .navbar {
-	background-image: url("img/home_cat.jpg");
+    background-image: url("img/home_cat.jpg");
 }
 
-.row div div{
-	background-color: blue;
-	margin-bottom: 10px;
-	color: white;
+.row div div {
+    margin-bottom: 10px;
 }
-.haha {
-	background-color: purple;
-	float:left;
+
+
+footer {
+    text-align: center;
 }
- footer {
- 	text-align: center;
- }
 
- hr{
- 	margin: 0.4em auto;
- }
+hr {
+    margin: 0.4em auto;
+}
 
- #addNewLocation{
- 	text-align: right;
- }
+#addNewLocation {
+    text-align: right;
+}
 
- #label_button {
- 	border: 2px solid #7297BA;
- 	border-radius: 10px;
- 	margin: 10px auto;
- 	width: 700px;
- }
-  #label_button a {
- 	color:#7297BA;
- }
+#label_button {
+    border: 2px solid #7297BA;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 700px;
+}
 
- /* add location page */
- #uploadPhoto{
- 	text-align: center;
- 	border: solid 2px #7297BA;
- }
-
- #settings-form{
- 	text-align: center;
- 	color:#7297BA;
- 	width: 300px;
- 	margin: auto 50px;
- }
-
- #settings-form input[type=text]{
- 	border: solid 2px #7297BA;
- 	width: 270px;
- }
-
- #form-line{
- 	margin-top: 20px;
- }
-
- #post_button{
- 	width:100%;
- 	height:60px;
- 	background-color:#7297BA;
- 	color: white;
- 	font-weight: 900;
- 	font-size: 1.5em;
- 	margin-top:45px;
- 	border:none;
- }
+#label_button a {
+    color: #7297BA;
+}
 
 
- .container{
- 	padding:0px;
- }
+/* add location page */
+
+#uploadPhoto {
+    text-align: center;
+    border: solid 2px #7297BA;
+}
+
+#settings-form {
+    text-align: center;
+    color: #7297BA;
+    width: 300px;
+    margin: auto 50px;
+}
+
+#settings-form input[type=text] {
+    border: solid 2px #7297BA;
+    width: 270px;
+}
+
+#form-line {
+    margin-top: 20px;
+}
+
+#post_button {
+    width: 100%;
+    height: 60px;
+    background-color: #7297BA;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: 45px;
+    border: none;
+}
+
+
+.container {
+    padding: 0px;
+}
+
 
 /* addNewLoc */
 
-.txt{
-	color:#7297BA;
+.txt {
+    color: #7297BA;
 }
 
-.uploadGrp{
-	width: 300px;
-	height:50px;
-	color:#7297BA;
-	background-color: #FFF;
-	/*background-image: url("addPhoto.png");*/
-	text-align: center;	
-	border: solid 2px #7297BA;
-	border-radius: 10px;
-	margin-top: 50px;	
+.uploadGrp {
+    width: 300px;
+    height: 50px;
+    color: #7297BA;
+    background-color: #FFF;
+    /*background-image: url("addPhoto.png");*/
+    text-align: center;
+    border: solid 2px #7297BA;
+    border-radius: 10px;
+    margin-top: 50px;
 }
 
-#file{
-	opacity:0;
+#file {
+    opacity: 0;
 }
 
+.navbar-header {
+    margin: 0px !important;
+}
 
- ==========================================================================
-   Author's custom styles
-   ========================================================================== 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+==========================================================================Author's custom styles
+==========================================================================
