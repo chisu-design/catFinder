@@ -40,8 +40,19 @@ function initMap() {
 
                     google.maps.event.addListener(marker, 'click', function() {
                         var markerID = this.id;
-                        
-                        markers.find()
+
+
+                        var sfdtggf = _.find(markers, function(o) { 
+                        	// console.log(o); 
+
+                        	return o.id === markerID; 
+                        });
+
+                        console.log(sfdtggf)
+
+
+
+
 
                     });
 
