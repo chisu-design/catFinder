@@ -15,8 +15,8 @@
 	font-size: 50px;
 }
 
-.navbar {
-    background-image: url("img/home_cat.jpg");
+.navbar-header {
+    background-image: url("/img/home_cat.jpg");
 }
 
 .row div div {
