@@ -51,7 +51,7 @@ function initMap() {
                         // console.log(foundMarkerID)
 
                         localStorage.setItem('catProfile',JSON.stringify(foundMarkerID));
-
+                        window.location.href = "catInfo.html";
 
 
 
