@@ -19,6 +19,7 @@ function initMap() {
 
         var markers = snapshotToArray(snapshot.val());
 
+		
         //get gps coordinate
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
@@ -35,6 +36,7 @@ function initMap() {
                         position: markers[i].location,
                         animation: google.maps.Animation.DROP,
                         map: map,
+                        icon: 'https://i.imgur.com/7HRAsbK.png',
                         id: markers[i].id
                     });
 
@@ -103,10 +105,8 @@ $(function() {
 
     });
 
-
     $('#myForm').submit(function(event) {
         event.preventDefault();
-
 
         if (files.length > 0) {
             var possible = 'abcedfghijklmnopqrstuvwxyzABCEDFGHIJKLMNOPQRSTUVWXYZ0123456789',
@@ -170,3 +170,13 @@ $(function() {
 
 
 });
+
+// below is reference:
+// https://www.w3schools.com/js/js_loop_for.asp
+// https://developers.google.com/maps/documentation/javascript/examples/marker-symbol-predefined
+// https://getbootstrap.com/docs/3.3/css/#grid
+// https://developers.google.com/maps/documentation/javascript/error-messages#api-not-activated-map-error
+// https://developers.google.com/maps/documentation/javascript/infowindows
+// https://www.youtube.com/watch?v=z3HD_1qA8Jc&list=PLC4wuUniRn-BHsORPCu9vtU-43NArfl3d&index=1
+// https://www.youtube.com/watch?v=4ZCy1AK7x4I
+// https://www.tutorialspoint.com/firebase/firebase_overview.html

@@ -5,6 +5,7 @@
 
 #imageUpload {
 	position: relative;
+	cursor: pointer;
 }
 
 #text-overlay {
@@ -15,10 +16,6 @@
 	color: white;
 	font-size: 30px;
 	text-align: center;
-}
-
-.navbar-header {
-    background-image: url("/img/home_cat.jpg");
 }
 
 .row div div {
