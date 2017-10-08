@@ -9,10 +9,12 @@
 
 #text-overlay {
 	position: absolute;
-	top: 19px;
-	left: 178px;
+	top: 36px;
+	left: 159px;
+	width: 67px;
 	color: white;
-	font-size: 50px;
+	font-size: 30px;
+	text-align: center;
 }
 
 .navbar-header {
@@ -38,6 +40,7 @@ hr {
 
 #label_button {
     border: 2px solid #7297BA;
+    cursor: pointer;
     border-radius: 10px;
     margin: 10px auto;
     width: 700px;
