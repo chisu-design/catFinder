@@ -50,13 +50,29 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
-        <row
+        <div class="row">
+          <div class="col-xs-12" id="catPicSection">
+
+          </div>
+        </div>
             
         </div> <!-- /container -->   
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"</script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script>
+          var profile = JSON.parse(localStorage.getItem('catProfile'));
+          console.log(profile.images)
+          var ImagesAmount = profile.images.length
+          var catPic="";
+          for (i=0; i<ImagesAmount;i++){
+            
+            $('#catPicSection').append('<img class="catPics" src="' + profile.images[i]  + '"/>');
+          }
 
-        <script src="js/main.js"></script>
+
+          
+
+        </script>
     </body>
 </html>

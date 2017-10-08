@@ -113,6 +113,11 @@ hr {
 .navbar-header {
     margin: 0px !important;
 }
+/*cat info page css*/
 
+.catPics{
+	margin-top:15px;
+	width:100%;
+}
 ==========================================================================Author's custom styles
 ==========================================================================

@@ -42,13 +42,15 @@ function initMap() {
                         var markerID = this.id;
 
 
-                        var sfdtggf = _.find(markers, function(o) { 
+                        var foundMarkerID = _.find(markers, function(o) { 
                         	// console.log(o); 
 
                         	return o.id === markerID; 
                         });
 
-                        console.log(sfdtggf)
+                        // console.log(foundMarkerID)
+
+                        localStorage.setItem('catProfile',JSON.stringify(foundMarkerID));
 
 
 
