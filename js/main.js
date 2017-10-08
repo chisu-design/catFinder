@@ -107,6 +107,7 @@ $(function() {
     $('#myForm').submit(function(event) {
         event.preventDefault();
 
+
         if (files.length > 0) {
             var possible = 'abcedfghijklmnopqrstuvwxyzABCEDFGHIJKLMNOPQRSTUVWXYZ0123456789',
                 numOfChar = 20,
@@ -117,6 +118,7 @@ $(function() {
                 uuid += possible.charAt(Math.floor(Math.random() * possible.length));
 
             }
+
 
             for (i = 0, numOfFiles = files.length; i < numOfFiles; i++) {
 
@@ -129,17 +131,30 @@ $(function() {
 
                     //insert data into firebase
                     if (images.length === numOfFiles) {
-                        database.ref('cat').push({
-                            id: uuid,
-                            name: event.target.catName.value,
-                            location: location,
-                            images: images
-                        });
+
+				        if (navigator.geolocation) {
+				            navigator.geolocation.getCurrentPosition(function(position) {
+
+		                        database.ref('cat').push({
+		                            id: uuid,
+		                            name: event.target.catName.value,
+		                            location: { lat: position.coords.latitude, lng: position.coords.longitude },
+		                            images: images
+		                        });
+		                        
+				            });
+				        } else {
+				            //execute code here if browser does not support geolocation
+				            x.innerHTML = "Geolocation is not supported by this browser.";
+				        }
+
                     }
+
 
                 }
 
                 storageRef.put(files[i]).then(insertImage);
+
                 //go back to the homepage
                 window.location.href = "index.html"
 
