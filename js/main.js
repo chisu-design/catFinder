@@ -141,7 +141,10 @@ $(function() {
 		                            location: { lat: position.coords.latitude, lng: position.coords.longitude },
 		                            images: images
 		                        });
-		                        
+
+		                        //go back to the homepage
+				                window.location.href = "index.html";
+
 				            });
 				        } else {
 				            //execute code here if browser does not support geolocation
@@ -155,8 +158,6 @@ $(function() {
 
                 storageRef.put(files[i]).then(insertImage);
 
-                //go back to the homepage
-                window.location.href = "index.html"
 
             }
         }

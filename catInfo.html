@@ -62,12 +62,12 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script>
           var profile = JSON.parse(localStorage.getItem('catProfile'));
-          console.log(profile.images)
-          var ImagesAmount = profile.images.length
+          
           var catPic="";
-          for (i=0; i<ImagesAmount;i++){
+          for (i=0, totalImages = profile.images.length; i < totalImages; i++){
             
             $('#catPicSection').append('<img class="catPics" src="' + profile.images[i]  + '"/>');
+            
           }
 
 
