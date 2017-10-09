@@ -16,6 +16,7 @@
     </style>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <!-- jquery and firebase -->
@@ -29,15 +30,17 @@
         <nav class="navbar navbar-custom navbar-fixed-top">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
+                <header class="navbar-header">
                     <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button> -->
-                    <a class="navbar-brand" href="index.html">CatFinder</a>
-                </div>
+                    <a class="navbar-brand" href="index.html">
+                      <img alt="Brand" src="https://i.imgur.com/fywg2ai.png">
+                    </a>
+                </header>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
@@ -53,14 +56,14 @@
         <!-- form -->
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2 txt">
-                <h4> Select cat pic from album</h1>
+                <h4 id="selectPhoto"> Select cat photos from album</h4>
                     </div>
                     <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
                     <form id="myForm" action="index.html">
 
                         <!-- upload photo button -->
                         <label id="imageUpload">
-                            <img src="img/addPhoto.png" width="250px"/>
+                            <img src="https://i.imgur.com/HPfWUYt.png" width="250px"/>
                             <div id="text-overlay">+</div>
                             <input style="display:none" type="file" class="uploadGrp" id="files" multiple name="files" accept="image/*"><br>
                             <!-- <img src="img/addPhoto.png" height="200" alt="Upload Image"> -->
@@ -70,16 +73,18 @@
                         <input class="form-control" type="text" name="catName">
                         <br/>
                         <button id="cancel" class="btn btn-custom" onClick="window.location.href = 'index.html'">Cancel</button>
-                        <input class="btn btn-custom" type="submit" value="Submit" >
+                        <input id="submit_btn" class="btn btn-custom" type="submit" value="Submit" >
                     </form>
                     </div>
                 </div>
-            
-                
+                <footer id="addLoc_footer" class="col-xs-12" >
+                    <hr/>
+                    <p>&copy; CatFinder 2017</p>
+                </footer>                
         </div> <!-- /container -->   
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"</script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

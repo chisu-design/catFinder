@@ -1,3 +1,17 @@
+html, body {
+	font-family: 'Droid Sans', sans-serif;
+	color:#113285;
+}
+
+.navbar-brand{
+	padding:0px;
+}
+
+.navbar{
+	background-color: #707070;
+    background-image: linear-gradient(to right, #005CAF, #113285);
+}
+
 .active {
     float: left;
     margin-left: 500px;
@@ -10,10 +24,10 @@
 
 #text-overlay {
 	position: absolute;
-	top: 36px;
-	left: 159px;
+	top: 50px;
+	left: 154px;
 	width: 67px;
-	color: white;
+	color: #113285;
 	font-size: 30px;
 	text-align: center;
 }
@@ -25,26 +39,34 @@
 
 footer {
     text-align: center;
+
 }
 
 hr {
     margin: 0.4em auto;
 }
 
-#addNewLocation {
-    text-align: right;
-}
-
 #label_button {
-    border: 2px solid #7297BA;
+    border: 2px solid #113285;
     cursor: pointer;
     border-radius: 10px;
-    margin: 10px auto;
-    width: 700px;
+    margin: 15px auto;
+    width: 500px;
+    color: #113285;
 }
 
 #label_button a {
-    color: #7297BA;
+    color: #113285;
+}
+
+/* https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center */
+#loadingImage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  width: 200px;
 }
 
 
@@ -74,7 +96,7 @@ hr {
 #post_button {
     width: 100%;
     height: 60px;
-    background-color: #7297BA;
+    background-color: #113285;
     color: white;
     font-weight: 900;
     font-size: 1.5em;
@@ -87,6 +109,10 @@ hr {
     padding: 0px;
 }
 
+
+#addLoc_footer{
+	margin-top: 200px;
+}
 
 /* addNewLoc */
 
@@ -113,11 +139,22 @@ hr {
 .navbar-header {
     margin: 0px !important;
 }
+
+#selectPhoto{
+	color:#113285;
+	font-size: 1em;
+	text-align: center;
+}
+
+#submit_btn{
+	background-color: #005CAF !important;
+	border:solid 2px #005CAF;
+	color:white;
+}
+
 /*cat info page css*/
 
 .catPics{
 	margin-top:15px;
 	width:100%;
 }
-==========================================================================Author's custom styles
-==========================================================================

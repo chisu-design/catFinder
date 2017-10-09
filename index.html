@@ -16,12 +16,13 @@
     }
 
           #map {
-        height: 400px;
+        height: 510px;
         width: 100%;
        }
     </style>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
@@ -30,17 +31,19 @@
     <div class="container">
         <!-- nav bar world -->
         <nav class="navbar navbar-custom navbar-fixed-top">
-            <div class="container-fluid">
+            <div class="container-fluid" id="navbar">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
+                <header class="navbar-header">
                     <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button> -->
-                    <a class="navbar-brand" href="#">CatFinder</a>
-                </div>
+                    <a class="navbar-brand" href="index.html">
+                      <img alt="Brand" src="https://i.imgur.com/fywg2ai.png">
+                    </a>
+                </header>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
@@ -54,22 +57,21 @@
             <!-- /.container-fluid -->
         </nav>
         <!-- button -->
-        <div class="col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-3">
+        <div class="col-xs-12">
             <div id="addNewLocation">
                 <a href="addNewLoc.html">
                   <label class="text-center" id="label_button">
-                      <img src="img/addNewLocation.png" alt="addNewLoc" height="35" width="35">
+                      <img src="https://i.imgur.com/a0Y9trZ.png" alt="addNewLoc" height="35" width="35">
                       Add New Location
                   </label>
                 </a>
-                <!-- <button type="button" class="btn btn-default btn-sm btn-block">
-              <img src="img/addNewLocation.png" alt="Add New Location Icon" height="42" width="42">
-              Add New Location
-            </button> -->
             </div>
         </div>
         <!-- Google Map -->
         <div id="map" class="col-xs-12">
+          <div class="text-center">
+            <img id="loadingImage" src="img/loadingGif.gif"/>
+          </div>
             <br/><br/><br/>
         </div>
         <footer class="col-xs-12">
@@ -79,10 +81,9 @@
     </div>
     <!-- /container -->
     <!-- Firebase -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCvts9xarbQN5yK7DLenVrGwZuTo2sVWg&callback=initMap">
     </script>
