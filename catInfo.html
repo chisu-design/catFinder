@@ -65,21 +65,17 @@
 
             
         </div> <!-- /container -->   
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script>
           var profile = JSON.parse(localStorage.getItem('catProfile'));
-          var catPic="";
+          var catPic= "";
           $('#catPicSection').append('<h3 class="text-center">' + profile.name + '</h3>');
-          for (i=0, totalImages = profile.images.length; i < totalImages; i++){
-            
-            $('#catPicSection').append('<img class="catPics" src="' + profile.images[i]  + '"/>');
 
-          }
-
-
-          
+          profile.images.forEach((image) => {
+            $('#catPicSection').append('<img class="catPics" src="' + image + '"/>');
+          });
 
         </script>
     </body>
